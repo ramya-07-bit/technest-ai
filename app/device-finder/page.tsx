@@ -673,18 +673,18 @@ export default function DeviceFinderPage() {
                     </p>
                   </div>
                   <div className="flex gap-2">
-                    <Link href="/products">
-                      <Button variant="outline" size="sm" className="rounded-full gap-1.5">
+                    <Button asChild variant="outline" size="sm" className="rounded-full gap-1.5">
+                      <Link href="/products">
                         Browse All
                         <ChevronRight className="w-3.5 h-3.5" />
-                      </Button>
-                    </Link>
-                    <Link href="/ai-assistant">
-                      <Button size="sm" className="rounded-full gap-1.5">
+                      </Link>
+                    </Button>
+                    <Button asChild size="sm" className="rounded-full gap-1.5">
+                      <Link href="/ai-assistant">
                         <Sparkles className="w-3.5 h-3.5" />
                         AI Assistant
-                      </Button>
-                    </Link>
+                      </Link>
+                    </Button>
                   </div>
                 </motion.div>
               )}

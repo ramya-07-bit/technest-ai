@@ -155,40 +155,40 @@ export function Navbar() {
                 </AnimatePresence>
               </div>
 
-              <Link href="/ai-assistant">
-                <Button variant="ghost" size="sm" className="gap-1.5 rounded-full hidden sm:flex">
+              <Button asChild variant="ghost" size="sm" className="gap-1.5 rounded-full hidden sm:flex">
+                <Link href="/ai-assistant">
                   <Sparkles className="w-4 h-4 text-blue-600" />
                   <span className="hidden lg:inline">AI Assistant</span>
-                </Button>
-              </Link>
+                </Link>
+              </Button>
 
-              <Link href="/wishlist">
-                <Button variant="ghost" size="icon" className="rounded-full relative">
+              <Button asChild variant="ghost" size="icon" className="rounded-full relative">
+                <Link href="/wishlist">
                   <Heart className="w-5 h-5" />
                   {wishlist.length > 0 && (
                     <Badge className="absolute -top-1 -right-1 h-5 min-w-5 px-1 flex items-center justify-center text-xs bg-blue-600 text-white">
                       {wishlist.length}
                     </Badge>
                   )}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
 
-              <Link href="/cart">
-                <Button variant="ghost" size="icon" className="rounded-full relative">
+              <Button asChild variant="ghost" size="icon" className="rounded-full relative">
+                <Link href="/cart">
                   <ShoppingBag className="w-5 h-5" />
                   {cartCount > 0 && (
                     <Badge className="absolute -top-1 -right-1 h-5 min-w-5 px-1 flex items-center justify-center text-xs bg-blue-600 text-white">
                       {cartCount}
                     </Badge>
                   )}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
 
-              <Link href="/profile">
-                <Button variant="ghost" size="icon" className="rounded-full">
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <Link href="/profile">
                   <User className="w-5 h-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
 
               <Button
                 variant="ghost"

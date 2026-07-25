@@ -32,7 +32,7 @@ export default function WishlistPage() {
           </div>
           <h1 className="text-2xl font-bold mb-2">Your wishlist is empty</h1>
           <p className="text-muted-foreground mb-6">Save items you love and come back to them later.</p>
-          <Link href="/products"><Button className="rounded-full gap-2">Discover Products <ArrowRight className="w-4 h-4" /></Button></Link>
+          <Button asChild className="rounded-full gap-2"><Link href="/products">Discover Products <ArrowRight className="w-4 h-4" /></Link></Button>
         </div>
       </PageShell>
     );

@@ -40,18 +40,18 @@ export function AIAssistantSection() {
                 Compare, get recommendations, and discover the best deals — all powered by Gemini AI.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/ai-assistant">
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-white/90 rounded-full gap-2">
+                <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-white/90 rounded-full gap-2">
+                  <Link href="/ai-assistant">
                     <MessageSquareText className="w-5 h-5" />
                     Try AI Assistant
-                  </Button>
-                </Link>
-                <Link href="/gift-finder">
-                  <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 rounded-full gap-2">
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 rounded-full gap-2">
+                  <Link href="/gift-finder">
                     AI Gift Finder
                     <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
 

@@ -95,8 +95,8 @@ export default function OrderSuccessPage() {
         </motion.div>
 
         <div className="flex gap-3 justify-center">
-          <Link href="/orders"><Button variant="outline" className="rounded-full gap-2"><Package className="w-4 h-4" /> Track Order</Button></Link>
-          <Link href="/products"><Button className="rounded-full gap-2"><ShoppingBag className="w-4 h-4" /> Continue Shopping</Button></Link>
+          <Button asChild variant="outline" className="rounded-full gap-2"><Link href="/orders"><Package className="w-4 h-4" /> Track Order</Link></Button>
+          <Button asChild className="rounded-full gap-2"><Link href="/products"><ShoppingBag className="w-4 h-4" /> Continue Shopping</Link></Button>
         </div>
       </div>
     </PageShell>

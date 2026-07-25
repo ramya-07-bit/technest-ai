@@ -174,7 +174,7 @@ export default function ProfilePage() {
                     <div className="text-center py-12">
                       <Heart className="w-12 h-12 mx-auto text-muted-foreground mb-3" />
                       <p className="text-muted-foreground">Your wishlist is empty</p>
-                      <Link href="/products"><Button variant="outline" className="rounded-full mt-4">Browse Products</Button></Link>
+                      <Button asChild variant="outline" className="rounded-full mt-4"><Link href="/products">Browse Products</Link></Button>
                     </div>
                   ) : (
                     <div className="grid sm:grid-cols-2 gap-3">

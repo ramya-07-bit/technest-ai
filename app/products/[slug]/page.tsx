@@ -46,7 +46,7 @@ export default function ProductDetailPage() {
       <PageShell>
         <div className="text-center py-20">
           <h1 className="text-2xl font-bold mb-2">Product not found</h1>
-          <Link href="/products"><Button>Back to Products</Button></Link>
+          <Button asChild><Link href="/products">Back to Products</Link></Button>
         </div>
       </PageShell>
     );

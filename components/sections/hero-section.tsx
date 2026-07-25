@@ -39,18 +39,18 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link href="/products">
-              <Button size="lg" className="rounded-full gap-2 h-12 px-8 text-base shadow-glow group">
+            <Button asChild size="lg" className="rounded-full gap-2 h-12 px-8 text-base shadow-glow group">
+              <Link href="/products">
                 Shop Now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-            <Link href="/compare">
-              <Button size="lg" variant="outline" className="rounded-full gap-2 h-12 px-8 text-base">
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="rounded-full gap-2 h-12 px-8 text-base">
+              <Link href="/compare">
                 <BarChart3 className="w-5 h-5" />
                 Compare Products
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
 
           {/* Stats */}

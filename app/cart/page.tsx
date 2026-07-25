@@ -52,7 +52,7 @@ export default function CartPage() {
           </div>
           <h1 className="text-2xl font-bold mb-2">Your cart is empty</h1>
           <p className="text-muted-foreground mb-6">Browse our products and find something you love.</p>
-          <Link href="/products"><Button className="rounded-full gap-2">Start Shopping <ArrowRight className="w-4 h-4" /></Button></Link>
+          <Button asChild className="rounded-full gap-2"><Link href="/products">Start Shopping <ArrowRight className="w-4 h-4" /></Link></Button>
         </div>
       </PageShell>
     );
@@ -114,7 +114,7 @@ export default function CartPage() {
             </AnimatePresence>
 
             <div className="flex justify-between items-center pt-2">
-              <Link href="/products"><Button variant="ghost" className="rounded-full">Continue Shopping</Button></Link>
+              <Button asChild variant="ghost" className="rounded-full"><Link href="/products">Continue Shopping</Link></Button>
               <Button variant="ghost" onClick={clearCart} className="text-red-500 rounded-full">Clear Cart</Button>
             </div>
           </div>
@@ -187,11 +187,11 @@ export default function CartPage() {
                 Estimated delivery: 3-5 business days
               </div>
 
-              <Link href="/checkout">
-                <Button className="w-full rounded-full gap-2 shadow-glow" size="lg">
+              <Button asChild className="w-full rounded-full gap-2 shadow-glow" size="lg">
+                <Link href="/checkout">
                   Proceed to Checkout <ArrowRight className="w-5 h-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
