@@ -162,27 +162,31 @@ export function Navbar() {
                 </Link>
               </Button>
 
-              <Button asChild variant="ghost" size="icon" className="rounded-full relative">
-                <Link href="/wishlist">
-                  <Heart className="w-5 h-5" />
-                  {wishlist.length > 0 && (
-                    <Badge className="absolute -top-1 -right-1 h-5 min-w-5 px-1 flex items-center justify-center text-xs bg-blue-600 text-white">
-                      {wishlist.length}
-                    </Badge>
-                  )}
-                </Link>
-              </Button>
+              <div className="relative">
+                <Button asChild variant="ghost" size="icon" className="rounded-full">
+                  <Link href="/wishlist">
+                    <Heart className="w-5 h-5" />
+                  </Link>
+                </Button>
+                {wishlist.length > 0 && (
+                  <Badge className="absolute -top-1 -right-1 h-5 min-w-5 px-1 flex items-center justify-center text-xs bg-blue-600 text-white pointer-events-none">
+                    {wishlist.length}
+                  </Badge>
+                )}
+              </div>
 
-              <Button asChild variant="ghost" size="icon" className="rounded-full relative">
-                <Link href="/cart">
-                  <ShoppingBag className="w-5 h-5" />
-                  {cartCount > 0 && (
-                    <Badge className="absolute -top-1 -right-1 h-5 min-w-5 px-1 flex items-center justify-center text-xs bg-blue-600 text-white">
-                      {cartCount}
-                    </Badge>
-                  )}
-                </Link>
-              </Button>
+              <div className="relative">
+                <Button asChild variant="ghost" size="icon" className="rounded-full">
+                  <Link href="/cart">
+                    <ShoppingBag className="w-5 h-5" />
+                  </Link>
+                </Button>
+                {cartCount > 0 && (
+                  <Badge className="absolute -top-1 -right-1 h-5 min-w-5 px-1 flex items-center justify-center text-xs bg-blue-600 text-white pointer-events-none">
+                    {cartCount}
+                  </Badge>
+                )}
+              </div>
 
               <Button asChild variant="ghost" size="icon" className="rounded-full">
                 <Link href="/profile">
